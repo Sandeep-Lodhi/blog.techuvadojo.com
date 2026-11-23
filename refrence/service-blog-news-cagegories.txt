@@ -1,0 +1,94 @@
+Services - 
+1 MERN Development Services - 
+  - Website Development - 
+  - Logistic Application development 
+ - e-commerce application development 
+real estate  application development 
+Company portfolio  website development
+Social media  website development /media platform development 
+Third party intigration - payment gateway shipping / tracking integration 
+Google map , api dashboard  building 
+Blog site development 
+Saas applicaion development 
+CRM development 
+Ed-Tech application development 
+
+Project management 
+CI/Cd setup integration 
+Application testing 
+Deployment setup - 
+ Host - IIS , Ngnix , Ngrock , render , vercel, hirocu , railway, apache, netlify , hosting , cloud ways 
+AWS , firebase , digital ocean , many more …
+
+Wordpress development 
+Shopify Development 
+Funnel building 
+Email marketing 
+Automation - n8n , zapier 
+Seo 
+Advertising services 
+Social media marketing 
+Some small services - 
+ Photo editing  
+Video editing 
+Social post and page maintenance 
+It consulting 
+Logo into autro design 
+Transcription 
+.
+.
+.
+MERN Stack Development
+Custom Web Development
+—Mobile App Development
+UI/UX Design
+API Development & Integration
+Cloud & DevOps
+AI Solutions
+Maintenance & Support
+
+
+
+
+Blogging categories  :-
+Tools 
+AI 
+Coding 
+Technologies 
+Tech companies
+Interviews
+Social medial
+Dropshipping
+Shopify
+Wordpress
+Online earning
+Freelancing 
+Government 
+Useful sites / website
+Advertising
+Extensions (chrome / vs code)
+Apps 
+Plugins 
+Funnels building 
+Social marketing 
+
+
+
+
+News - 
+Breaking news 
+AI an innovation 
+Startups
+Funding investment 
+Tech companies 
+Product launches 
+Markets & IPOs 
+Cybersecurity 
+Cloud & interprise 
+Events and conferences 
+Government and policy 
+Gadgets and hardwares 
+Career and jobs 
+Deals and acquisitions	
+Opinions and analytics 
+

@@ -1,0 +1,124 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "color": {
+      "custom": true,
+      "customGradient": true,
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#2563EB",
+          "name": "Primary Blue"
+        },
+        {
+          "slug": "accent",
+          "color": "#0FB7F1",
+          "name": "Accent Cyan"
+        },
+        {
+          "slug": "text",
+          "color": "#111827",
+          "name": "Dark Text"
+        },
+        {
+          "slug": "body",
+          "color": "#374151",
+          "name": "Body Text"
+        },
+        {
+          "slug": "background",
+          "color": "#F8FAFC",
+          "name": "Light Gray"
+        },
+        {
+          "slug": "surface",
+          "color": "#FFFFFF",
+          "name": "White"
+        },
+        {
+          "slug": "border",
+          "color": "#E5E7EB",
+          "name": "Border Gray"
+        },
+        {
+          "slug": "success",
+          "color": "#22C55E",
+          "name": "Success Green"
+        },
+        {
+          "slug": "warning",
+          "color": "#F59E0B",
+          "name": "Warning Orange"
+        },
+        {
+          "slug": "danger",
+          "color": "#EF4444",
+          "name": "Danger Red"
+        }
+      ],
+      "gradients": [
+        {
+          "slug": "blue-gradient",
+          "gradient": "linear-gradient(135deg, #2563EB 0%, #0FB7F1 100%)",
+          "name": "Blue Gradient"
+        },
+        {
+          "slug": "green-gradient",
+          "gradient": "linear-gradient(135deg, #22C55E 0%, #0FB7F1 100%)",
+          "name": "Green Gradient"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Inter, sans-serif",
+          "name": "Inter",
+          "slug": "inter"
+        },
+        {
+          "fontFamily": "Poppins, sans-serif",
+          "name": "Poppins",
+          "slug": "poppins"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "small",
+          "size": "0.875rem",
+          "name": "Small"
+        },
+        {
+          "slug": "normal",
+          "size": "1rem",
+          "name": "Normal"
+        },
+        {
+          "slug": "large",
+          "size": "1.25rem",
+          "name": "Large"
+        },
+        {
+          "slug": "x-large",
+          "size": "1.75rem",
+          "name": "Extra large"
+        }
+      ],
+      "customFontSize": true
+    },
+    "layout": {
+      "contentSize": "720px",
+      "wideSize": "1200px"
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#F8FAFC",
+      "text": "#0F172A"
+    },
+    "typography": {
+      "fontFamily": "Inter, sans-serif"
+    }
+  }
+}

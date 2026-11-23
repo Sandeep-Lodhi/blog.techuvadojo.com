@@ -1,0 +1,102 @@
+<svg width="540" height="365" viewBox="100 70 460 312" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Privacy and data protection illustration">
+  <defs>
+    <linearGradient id="ppShield" x1="0.15" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#6aa8ff"/>
+      <stop offset="0.45" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="ppShieldBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d4ed8"/>
+      <stop offset="1" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <radialGradient id="ppHalo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#bfdbfe" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#bfdbfe" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="ppCard" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1e3a8a" flood-opacity="0.16"/>
+    </filter>
+    <filter id="ppGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#2563eb" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <!-- Soft halo behind shield -->
+  <ellipse cx="360" cy="232" rx="180" ry="160" fill="url(#ppHalo)"/>
+
+  <!-- Orbit / network rings -->
+  <g transform="rotate(-16 360 232)">
+    <ellipse cx="360" cy="232" rx="232" ry="150" stroke="#bfdbfe" stroke-width="2" stroke-dasharray="2 9" stroke-linecap="round" opacity="0.9"/>
+    <ellipse cx="360" cy="232" rx="150" ry="98" stroke="#dbeafe" stroke-width="2" stroke-dasharray="2 9" stroke-linecap="round" opacity="0.9"/>
+    <circle cx="128" cy="232" r="4" fill="#60a5fa"/>
+    <circle cx="592" cy="232" r="4" fill="#93c5fd"/>
+    <circle cx="360" cy="82" r="3.5" fill="#93c5fd"/>
+    <circle cx="360" cy="382" r="3.5" fill="#93c5fd"/>
+  </g>
+
+  <!-- Connector lines from shield to cards -->
+  <g stroke="#93c5fd" stroke-width="1.6" stroke-dasharray="2 7" stroke-linecap="round" fill="none" opacity="0.85">
+    <path d="M196 138 C250 150 285 168 312 188"/>
+    <path d="M506 138 C452 150 417 168 392 186"/>
+    <path d="M194 324 C250 318 288 300 312 280"/>
+    <path d="M506 322 C452 316 416 300 392 282"/>
+  </g>
+  <g fill="#60a5fa">
+    <circle cx="312" cy="188" r="3"/>
+    <circle cx="392" cy="186" r="3"/>
+    <circle cx="312" cy="280" r="3"/>
+    <circle cx="392" cy="282" r="3"/>
+  </g>
+
+  <!-- Shield -->
+  <g filter="url(#ppGlow)" transform="translate(275 116)">
+    <!-- depth layer -->
+    <path d="M93 6 L171 36 L171 112 C171 170 139 208 93 230 C47 208 15 170 15 112 L15 36 Z" fill="url(#ppShieldBack)" transform="translate(6 8)" opacity="0.55"/>
+    <!-- face -->
+    <path d="M93 6 L171 36 L171 112 C171 170 139 208 93 230 C47 208 15 170 15 112 L15 36 Z" fill="url(#ppShield)"/>
+    <!-- inner border ring -->
+    <path d="M93 18 L160 44 L160 110 C160 161 132 195 93 215 C54 195 26 161 26 110 L26 44 Z" fill="none" stroke="#ffffff" stroke-width="1.4" opacity="0.28"/>
+    <!-- top sheen -->
+    <path d="M93 6 L171 36 L171 70 C140 52 110 46 93 46 C76 46 46 52 15 70 L15 36 Z" fill="#ffffff" opacity="0.14"/>
+
+    <!-- Padlock -->
+    <path d="M73 96 v-12 a20 20 0 0 1 40 0 v12" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+    <rect x="59" y="94" width="68" height="58" rx="13" fill="#ffffff"/>
+    <rect x="59" y="94" width="68" height="58" rx="13" fill="#eff6ff" opacity="0.0"/>
+    <circle cx="93" cy="116" r="8" fill="#1d4ed8"/>
+    <path d="M89.5 121 h7 l-2 15 h-3 z" fill="#1d4ed8"/>
+  </g>
+
+  <!-- Floating card: User (top-left) -->
+  <g filter="url(#ppCard)">
+    <rect x="120" y="92" width="72" height="72" rx="18" fill="#ffffff"/>
+    <g transform="translate(140 112)" stroke="#2563eb" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="16" cy="11" r="7"/>
+      <path d="M3 33 a13 13 0 0 1 26 0"/>
+    </g>
+  </g>
+
+  <!-- Floating card: Folder (top-right) -->
+  <g filter="url(#ppCard)">
+    <rect x="470" y="92" width="72" height="72" rx="18" fill="#ffffff"/>
+    <g transform="translate(489 113)" stroke="#2563eb" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 6 a2 2 0 0 1 2-2 h9 l4 4 h15 a2 2 0 0 1 2 2 v15 a2 2 0 0 1-2 2 H4 a2 2 0 0 1-2-2 z"/>
+    </g>
+  </g>
+
+  <!-- Floating card: Document (bottom-left) -->
+  <g filter="url(#ppCard)">
+    <rect x="118" y="288" width="72" height="72" rx="18" fill="#ffffff"/>
+    <g transform="translate(140 307)" stroke="#2563eb" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 3 h12 l8 8 v20 a2 2 0 0 1-2 2 H4 a2 2 0 0 1-2-2 V5 a2 2 0 0 1 2-2 z"/>
+      <path d="M15 3 v8 h8"/>
+      <path d="M8 21 h10 M8 27 h7"/>
+    </g>
+  </g>
+
+  <!-- Floating card: Check (bottom-right) -->
+  <g filter="url(#ppCard)">
+    <rect x="470" y="286" width="72" height="72" rx="18" fill="#ffffff"/>
+    <path d="M491 322 l8 8 16 -17" stroke="#2563eb" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

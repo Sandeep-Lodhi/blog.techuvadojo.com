@@ -1,0 +1,53 @@
+<svg width="520" height="360" viewBox="0 0 520 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Paper plane contact illustration">
+  <defs>
+    <linearGradient id="cuPlaneA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#bfdbfe"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="cuPlaneB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="cuPlaneC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#93c5fd"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="cuBubble" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <filter id="cuShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1e3a8a" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Dotted flight trail -->
+  <path d="M300 232 C236 268 250 320 296 322 C330 323 332 296 308 296 C286 296 286 330 320 342" stroke="#60a5fa" stroke-width="2.4" stroke-dasharray="1 10" stroke-linecap="round" fill="none" opacity="0.85"/>
+
+  <!-- Paper plane -->
+  <g filter="url(#cuShadow)">
+    <!-- far wing (top, light) -->
+    <path d="M470 70 L196 150 L322 178 Z" fill="url(#cuPlaneA)"/>
+    <!-- keel (bottom, dark) -->
+    <path d="M470 70 L322 178 L300 246 Z" fill="url(#cuPlaneB)"/>
+    <!-- near wing fold (mid) -->
+    <path d="M322 178 L196 150 L286 210 Z" fill="url(#cuPlaneC)"/>
+    <!-- center crease highlight -->
+    <path d="M470 70 L322 178 L286 210" stroke="#ffffff" stroke-width="1.4" opacity="0.35" fill="none" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Envelope bubble -->
+  <g filter="url(#cuShadow)">
+    <circle cx="150" cy="72" r="38" fill="url(#cuBubble)"/>
+    <g transform="translate(132 58)" stroke="#ffffff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="0" y="2" width="36" height="26" rx="4"/>
+      <path d="M1 5 L18 18 L35 5"/>
+    </g>
+  </g>
+
+  <!-- Phone bubble -->
+  <g filter="url(#cuShadow)">
+    <circle cx="430" cy="296" r="38" fill="url(#cuBubble)"/>
+    <path d="M444 308.8v4.4a2.9 2.9 0 0 1-3.2 2.9 29 29 0 0 1-12.6-4.5 28.5 28.5 0 0 1-8.8-8.8 29 29 0 0 1-4.5-12.7 2.9 2.9 0 0 1 2.9-3.2h4.4a2.9 2.9 0 0 1 2.9 2.5c.2 1.3.5 2.6 1 3.8a2.9 2.9 0 0 1-.7 3l-1.8 1.8a23 23 0 0 0 8.8 8.8l1.8-1.8a2.9 2.9 0 0 1 3-.7c1.2.5 2.5.8 3.8 1a2.9 2.9 0 0 1 2.5 3z" fill="#ffffff"/>
+  </g>
+</svg>

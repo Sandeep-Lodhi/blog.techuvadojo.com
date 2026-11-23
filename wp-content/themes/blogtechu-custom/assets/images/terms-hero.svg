@@ -1,0 +1,70 @@
+<svg width="540" height="330" viewBox="140 52 370 330" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Terms and conditions document illustration">
+  <defs>
+    <linearGradient id="tcShield" x1="0.15" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#6aa8ff"/>
+      <stop offset="0.45" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <radialGradient id="tcHalo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#dbeafe" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#dbeafe" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="tcCard" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#1e3a8a" flood-opacity="0.15"/>
+    </filter>
+    <filter id="tcGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#2563eb" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+
+  <!-- Soft halo -->
+  <ellipse cx="350" cy="225" rx="200" ry="180" fill="url(#tcHalo)"/>
+
+  <!-- Dotted grid accent (left) -->
+  <g fill="#bfdbfe">
+    <!-- 6 x 5 dot grid -->
+    <g>
+      <circle cx="150" cy="150" r="2"/><circle cx="165" cy="150" r="2"/><circle cx="180" cy="150" r="2"/><circle cx="195" cy="150" r="2"/><circle cx="210" cy="150" r="2"/>
+      <circle cx="150" cy="165" r="2"/><circle cx="165" cy="165" r="2"/><circle cx="180" cy="165" r="2"/><circle cx="195" cy="165" r="2"/><circle cx="210" cy="165" r="2"/>
+      <circle cx="150" cy="180" r="2"/><circle cx="165" cy="180" r="2"/><circle cx="180" cy="180" r="2"/><circle cx="195" cy="180" r="2"/><circle cx="210" cy="180" r="2"/>
+      <circle cx="150" cy="195" r="2"/><circle cx="165" cy="195" r="2"/><circle cx="180" cy="195" r="2"/><circle cx="195" cy="195" r="2"/><circle cx="210" cy="195" r="2"/>
+    </g>
+  </g>
+
+  <!-- Document card -->
+  <g filter="url(#tcCard)">
+    <rect x="190" y="70" width="280" height="300" rx="20" fill="#ffffff"/>
+  </g>
+
+  <!-- Document content -->
+  <text x="216" y="118" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Terms &amp; Conditions</text>
+
+  <!-- title underline bars -->
+  <rect x="216" y="138" width="228" height="9" rx="4.5" fill="#e2e8f0"/>
+
+  <!-- rows -->
+  <g>
+    <rect x="216" y="168" width="200" height="8" rx="4" fill="#eef2f7"/>
+    <rect x="216" y="188" width="228" height="8" rx="4" fill="#eef2f7"/>
+
+    <!-- checklist row 1 -->
+    <path d="M218 222 l5 5 9 -10" stroke="#2563eb" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="244" y="218" width="190" height="8" rx="4" fill="#eef2f7"/>
+    <!-- checklist row 2 -->
+    <path d="M218 250 l5 5 9 -10" stroke="#2563eb" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="244" y="246" width="170" height="8" rx="4" fill="#eef2f7"/>
+
+    <rect x="216" y="278" width="210" height="8" rx="4" fill="#eef2f7"/>
+    <rect x="216" y="298" width="150" height="8" rx="4" fill="#eef2f7"/>
+  </g>
+
+  <!-- Signature -->
+  <path d="M360 338 c10 -16 16 -16 18 -6 c2 10 -8 14 -4 4 c3 -8 12 -10 22 -8" stroke="#2563eb" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Shield with check (overlapping bottom-right) -->
+  <g filter="url(#tcGlow)" transform="translate(400 198)">
+    <path d="M55 4 L100 21 L100 63 C100 96 81 117 55 130 C29 117 10 96 10 63 L10 21 Z" fill="url(#tcShield)"/>
+    <path d="M55 14 L91 28 L91 62 C91 89 76 107 55 119 C34 107 19 89 19 62 L19 28 Z" fill="none" stroke="#ffffff" stroke-width="1.3" opacity="0.3"/>
+    <path d="M38 64 l12 12 24 -26" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

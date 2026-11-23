@@ -1,0 +1,17 @@
+/*
+Theme Name: TechuvaDojo
+Theme URI: https://techuvadojo.com/
+Author: TechuvaDojo
+Author URI: https://techuvadojo.com/
+Description: Modern, responsive WordPress theme for TechuvaDojo — built with Tailwind + Vite. Mega-menu, services, portfolio, blog, mega-footer with dark hero and tech aesthetic.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: blogtechu-custom
+Tags: custom, blog, responsive, accessible, modern, tech, dark
+*/
+
+/*
+ * NOTE: All visual styles live in /dist/style.css (compiled from assets/css/app.css).
+ * This file exists only to satisfy the WordPress theme header.
+ */

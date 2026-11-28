@@ -18,3 +18,7 @@ RewriteRule . /index.php [L]
 <FilesMatch "^\.database-backup-.*\.sql$">
     Require all denied
 </FilesMatch>
+
+<FilesMatch "^\.site-transfer-.*\.zip$">
+    Require all denied
+</FilesMatch>

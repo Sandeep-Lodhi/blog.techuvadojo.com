@@ -98,3 +98,44 @@ including:
 
 Never commit database exports, user data, database credentials, or private
 keys.
+
+## Working from two systems
+
+Use GitHub for the site code and keep each machine's database and uploads in
+private transfer backups. The `origin` remote is configured for this repository
+and `main` is the shared branch. On the system you are starting work on, first
+run:
+
+```sh
+git switch main
+git pull --ff-only origin main
+```
+
+After making code changes, commit and push them before switching systems:
+
+```sh
+git add <changed-code-files>
+git commit -m "Describe the change"
+git push origin main
+```
+
+Then pull on the other system before editing there. This keeps `main` moving in
+one direction and avoids merge commits for routine handoffs. Do not edit the
+same checkout from both systems at once. If both systems need to work at the
+same time, use separate branches and merge through GitHub.
+
+Git does not merge WordPress database changes or files in `wp-content/uploads/`.
+When posts, settings, users, or media change on one system, export the database
+and uploads there, transfer those backups privately, then import them on the
+other system before continuing content work. Keep only one system as the active
+database editor at a time so an older dump cannot overwrite newer content.
+Never put those transfer backups in GitHub.
+
+The root `.site-transfer-*.zip` is a private first-setup bundle. It contains the
+WordPress files, current uploads, and the latest saved database export. On a
+new system, create a Local site first, copy the bundle's `site-files/` contents
+into its `app/public/`, then import `migration-backups/site.sql` from that
+system's site shell with WP-CLI. Keep the destination's generated `wp-config.php`
+and use its credentials. Update the source URL to the new local URL with
+`wp search-replace` as described above. The included database snapshot is dated
+November 23, 2026.

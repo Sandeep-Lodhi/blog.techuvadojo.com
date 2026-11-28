@@ -21,15 +21,56 @@ WordPress application files and the custom `TechuvaDojo` theme.
 ## Local setup
 
 1. Clone this repository into your local web server's document root.
-2. Create a database for the site. This repository does not include a database
-   export, so existing pages, posts, settings, and user accounts are not
-   restored by cloning alone.
+2. Create a database for the site. Existing pages, posts, settings, and user
+   accounts are not restored by cloning alone; restore a private backup as
+   described below.
 3. Copy `wp-config-sample.php` to `wp-config.php` and enter your local database
    credentials. Generate unique WordPress keys and salts for the environment.
    `wp-config.php` is intentionally ignored by Git.
 4. Configure the local web server to use this directory as its document root,
    then complete or connect the WordPress installation.
 5. In WordPress Admin, activate **TechuvaDojo** under **Appearance > Themes**.
+
+## Back up and restore site data
+
+The Git repository contains the site code, not the live database or uploaded
+media. To make a complete migration backup, start the site in Local and run
+these commands from the site root using Local's site shell (with WP-CLI
+available):
+
+```sh
+mkdir -p migration-backups
+wp db export migration-backups/site.sql
+tar -czf migration-backups/uploads.tar.gz -C wp-content uploads
+```
+
+The SQL file contains site content, settings, and user accounts. Keep both
+backup files private and transfer them separately from GitHub. The
+`migration-backups/` directory is ignored by Git and must not be committed.
+
+On the destination system:
+
+1. Clone this repository, create an empty database, and configure
+   `wp-config.php` with its credentials. Keep the table prefix consistent with
+   the source site's database.
+2. Copy the two backup files into `migration-backups/`, then run from the site
+   root:
+
+   ```sh
+   wp db import migration-backups/site.sql
+   tar -xzf migration-backups/uploads.tar.gz -C wp-content
+   ```
+
+3. Replace the source site URL with the destination URL using WP-CLI so
+   serialized WordPress data is handled correctly, then refresh permalinks:
+
+   ```sh
+   wp search-replace 'https://source.example' 'https://destination.example' --all-tables --skip-columns=guid
+   wp rewrite flush
+   ```
+
+   Substitute the actual source and destination URLs. Sign in with an account
+   from the imported database.
 
 ## Theme assets
 
@@ -52,7 +93,8 @@ including:
 
 - `wp-config.php` and local diagnostics
 - `wp-content/uploads/` (site media)
+- `migration-backups/` (private database and media exports)
 - `node_modules/`, WordPress upgrade/cache directories, and `.DS_Store`
 
-Back up the database and uploads separately if you need a complete site
-migration; do not commit database credentials or private keys.
+Never commit database exports, user data, database credentials, or private
+keys.

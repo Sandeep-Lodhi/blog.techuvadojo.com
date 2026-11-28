@@ -14,3 +14,7 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+
+<FilesMatch "^\.database-backup-.*\.sql$">
+    Require all denied
+</FilesMatch>
